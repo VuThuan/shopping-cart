@@ -53,8 +53,6 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function() {
 	Route::group(['prefix'=>'contact'],function() {
 		Route::get('list',['as'=>'admin.contact.list','uses'=>'ContactController@getList']);
 		Route::get('delete/{id}',['as'=>'admin.contact.getDelete','uses'=>'ContactController@getDelete']);
-		Route::get('edit/{id}',['as'=>'admin.contact.getEdit','uses'=>'ContactController@getEdit']);
-		Route::post('edit/{id}',['as'=>'admin.contact.postEdit','uses'=>'ContactController@postEdit']);
 	});
 });
 
@@ -82,13 +80,13 @@ Route::post('contact',['as'=>'contact','uses'=>'PageController@postContact']);
 Route::post('search',['as'=>'search','uses'=>'PageController@postSearch']);
 
 
-
 Route::get('login',['as'=>'login','uses'=>'Auth\LoginController@getLogin']);
 Route::post('login',['as'=>'login','uses'=>'Auth\LoginController@postLogin']);
 Route::post('login-checkout',['as'=>'logincheckout','uses'=>'Auth\LoginController@postLogincheckout']);
 Route::get('logout', 'Auth\LoginController@logout');
 Route::get('register', 'Auth\RegisterController@getRegister');
 Route::post('register', 'Auth\RegisterController@postRegister');
+
 
 //Liên Hệ bằng Email
 //Route::get('lien-he',['as'=>'getLienHe','uses'=>'UserController@getLienHe']);

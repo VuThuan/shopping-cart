@@ -23,15 +23,9 @@
         </div>
         <div class="col-lg-3 facebook col-sm-6">
           <h2>Facebook </h2>
-         <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-        <div class="fb-like-box" data-href="https://www.facebook.com/fit.hcmute.edu.vn" data-width="292" data-show-faces="true" data-colorscheme="light" data-stream="false" data-show-border="false" data-header="false"  data-height="240"></div>
+          <div id="fb-root"></div>
+          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=425696331562487&autoLogAppEvents=1"></script>
+          <div class="fb-group" data-href="https://www.facebook.com/groups/j2team.community/" data-width="280" data-show-social-context="true" data-show-metadata="true"></div>
         </div>
       </div>
     </div>
